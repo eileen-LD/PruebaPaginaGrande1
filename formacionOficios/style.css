@@ -1,0 +1,354 @@
+/* ===== ESTILOS ESPECÍFICOS - APRENDE OFICIOS ===== */
+/* Archivo: style.css - Estilos para la sección de Formación en Oficios */
+/* Color de acento: Verde (#10b981) */
+
+/* ===== VARIABLES ESPECÍFICAS ===== */
+:root {
+  --color-oficios-principal: #10b981;
+  --color-oficios-claro: #34d399;
+  --color-oficios-muy-claro: #d1fae5;
+  --color-escuela-230: #059669;
+  --color-escuela-231: #047857;
+}
+
+/* ===== HERO SECTION OFICIOS ===== */
+.oficios-hero {
+  background: linear-gradient(135deg, var(--color-oficios-principal) 0%, var(--color-azul-principal) 100%);
+}
+
+.oficios-hero .hero-title {
+  background: linear-gradient(135deg, var(--color-blanco) 0%, var(--color-oficios-muy-claro) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== ICONOS ESPECÍFICOS ===== */
+.oficios-icon {
+  background: linear-gradient(135deg, var(--color-oficios-principal) 0%, var(--color-oficios-claro) 100%);
+}
+
+/* ===== ESCUELAS ===== */
+.escuela-section {
+  margin-bottom: var(--espacio-3xl);
+  padding: var(--espacio-2xl);
+  background-color: var(--color-blanco);
+  border-radius: var(--radio-xl);
+  box-shadow: var(--sombra-md);
+}
+
+.escuela-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--espacio-2xl);
+  padding-bottom: var(--espacio-lg);
+  border-bottom: 2px solid var(--color-gris-claro);
+}
+
+.escuela-header h3 {
+  color: var(--color-oficios-principal);
+  font-size: var(--texto-3xl);
+  margin-bottom: 0;
+}
+
+.escuela-badge {
+  padding: var(--espacio-sm) var(--espacio-lg);
+  border-radius: var(--radio-lg);
+  color: var(--color-blanco);
+  font-weight: var(--peso-semi-bold);
+  font-size: var(--texto-sm);
+}
+
+.escuela-230 {
+  background-color: var(--color-escuela-230);
+}
+
+.escuela-231 {
+  background-color: var(--color-escuela-231);
+}
+
+/* ===== CURSOS GRID ===== */
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--espacio-xl);
+}
+
+.curso-card {
+  background-color: var(--color-gris-claro);
+  border-radius: var(--radio-xl);
+  overflow: hidden;
+  box-shadow: var(--sombra-md);
+  transition: all var(--transicion-normal);
+  position: relative;
+}
+
+.curso-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra-xl);
+}
+
+.curso-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.curso-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transicion-lenta);
+}
+
+.curso-card:hover .curso-image img {
+  transform: scale(1.1);
+}
+
+/* ===== ETIQUETAS DE ESCUELA ===== */
+.escuela-tag {
+  position: absolute;
+  top: var(--espacio-md);
+  right: var(--espacio-md);
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border-radius: var(--radio-md);
+  color: var(--color-blanco);
+  font-size: var(--texto-xs);
+  font-weight: var(--peso-semi-bold);
+  z-index: 10;
+}
+
+.escuela-230-tag {
+  background-color: var(--color-escuela-230);
+}
+
+.escuela-231-tag {
+  background-color: var(--color-escuela-231);
+}
+
+/* ===== CONTENIDO DEL CURSO ===== */
+.curso-content {
+  padding: var(--espacio-xl);
+}
+
+.curso-content h4 {
+  color: var(--color-oficios-principal);
+  margin-bottom: var(--espacio-md);
+  font-size: var(--texto-xl);
+}
+
+.curso-duracion {
+  color: var(--color-gris-medio);
+  font-size: var(--texto-sm);
+  font-weight: var(--peso-medio);
+  margin-bottom: var(--espacio-md);
+  padding: var(--espacio-sm) var(--espacio-md);
+  background-color: var(--color-oficios-muy-claro);
+  border-radius: var(--radio-md);
+  display: inline-block;
+}
+
+.curso-descripcion {
+  margin-bottom: var(--espacio-lg);
+  line-height: 1.6;
+}
+
+.curso-inscripcion {
+  width: 100%;
+  justify-content: center;
+  background-color: var(--color-oficios-principal);
+  border: none;
+}
+
+.curso-inscripcion:hover {
+  background-color: var(--color-oficios-claro);
+}
+
+/* ===== REQUISITOS ESPECÍFICOS ===== */
+.requisitos-content .requisito-item:hover {
+  background-color: var(--color-oficios-muy-claro);
+}
+
+.requisitos-content .requisito-item i {
+  color: var(--color-oficios-principal);
+}
+
+.requisitos-nota {
+  border-left-color: var(--color-oficios-principal);
+}
+
+/* ===== INSCRIPCIÓN ===== */
+.inscripcion-content {
+  display: flex;
+  justify-content: center;
+}
+
+.inscripcion-card {
+  background-color: var(--color-blanco);
+  padding: var(--espacio-3xl);
+  border-radius: var(--radio-xl);
+  box-shadow: var(--sombra-lg);
+  text-align: center;
+  max-width: 500px;
+  transition: all var(--transicion-normal);
+}
+
+.inscripcion-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra-xl);
+}
+
+.inscripcion-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--color-oficios-principal) 0%, var(--color-oficios-claro) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--espacio-xl);
+}
+
+.inscripcion-icon i {
+  font-size: var(--texto-3xl);
+  color: var(--color-blanco);
+}
+
+.inscripcion-card h3 {
+  color: var(--color-oficios-principal);
+  margin-bottom: var(--espacio-lg);
+}
+
+.inscripcion-card .btn {
+  background-color: var(--color-oficios-principal);
+  margin-top: var(--espacio-lg);
+}
+
+.inscripcion-card .btn:hover {
+  background-color: var(--color-oficios-claro);
+}
+
+/* ===== CONTACTO OFICIOS ===== */
+.contacto-oficios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--espacio-xl);
+}
+
+.contacto-card {
+  background-color: var(--color-blanco);
+  padding: var(--espacio-2xl);
+  border-radius: var(--radio-xl);
+  box-shadow: var(--sombra-md);
+  transition: all var(--transicion-normal);
+}
+
+.contacto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-lg);
+  border-left: 4px solid var(--color-oficios-principal);
+}
+
+.contacto-card h3 {
+  color: var(--color-oficios-principal);
+  margin-bottom: var(--espacio-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-sm);
+}
+
+.contacto-card p {
+  margin-bottom: var(--espacio-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-sm);
+}
+
+.contacto-card strong {
+  color: var(--color-oficios-principal);
+  min-width: 80px;
+}
+
+/* ===== BOTONES ESPECÍFICOS ===== */
+.btn-outline {
+  border-color: var(--color-oficios-principal);
+  color: var(--color-oficios-principal);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-oficios-principal);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .escuela-header {
+    flex-direction: column;
+    gap: var(--espacio-md);
+    text-align: center;
+  }
+  
+  .cursos-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contacto-oficios {
+    grid-template-columns: 1fr;
+  }
+  
+  .inscripcion-card {
+    padding: var(--espacio-2xl);
+  }
+  
+  .escuela-section {
+    padding: var(--espacio-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .curso-content {
+    padding: var(--espacio-lg);
+  }
+  
+  .inscripcion-card {
+    padding: var(--espacio-xl);
+  }
+  
+  .contacto-card {
+    padding: var(--espacio-lg);
+  }
+  
+  .escuela-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+
+/* ===== ANIMACIONES ESPECÍFICAS ===== */
+@keyframes pulseGreen {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.curso-inscripcion:hover {
+  animation: pulseGreen 1.5s infinite;
+}
+
+/* ===== EFECTOS HOVER ADICIONALES ===== */
+.escuela-badge:hover {
+  transform: scale(1.05);
+  transition: transform var(--transicion-normal);
+}
+
+.escuela-tag:hover {
+  transform: scale(1.1);
+  transition: transform var(--transicion-normal);
+}
+

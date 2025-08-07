@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende Oficios - UPCNER. Formación práctica en oficios tradicionales y modernos. Escuela 230 y Escuela 231.">
+    <meta name="keywords" content="oficios, capacitación, UPCNER, escuela 230, escuela 231, formación técnica">
+    <meta name="author" content="UPCNER">
+    
+    <title>Aprende Oficios - UPCNER</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- AOS - Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ===== NAVEGACIÓN ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <!-- Logo UPCNER -->
+                <div class="navbar-brand">
+                    <img src="../img/logo-upcner.png" alt="Logo UPCNER" class="logo">
+                    <span class="brand-text">UPCNER</span>
+                </div>
+                
+                <!-- Menú de navegación -->
+                <div class="nav-menu">
+                    <a href="../index.html" class="nav-link">Inicio</a>
+                    <a href="#oficios" class="nav-link">Oficios</a>
+                    <a href="#escuelas" class="nav-link">Escuelas</a>
+                    <a href="#inscripcion" class="nav-link">Inscripción</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+                
+                <!-- Botón menú móvil -->
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== SECCIÓN HERO ===== -->
+    <section id="oficios" class="seccion-hero oficios-hero">
+        <div class="container">
+            <div class="hero-content text-center" data-aos="fade-up">
+                <h1 class="hero-title">Aprende Oficios</h1>
+                <p class="hero-subtitle">
+                    <!-- Texto 1: Descripción principal de oficios editable -->
+                    Desarrolla habilidades técnicas y prácticas en oficios tradicionales y modernos. 
+                    Formación de calidad en nuestras Escuelas 230 y 231.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#cursos" class="btn btn-primary">
+                        <i class="fas fa-tools"></i>
+                        Ver Cursos
+                    </a>
+                    <a href="#inscripcion" class="btn btn-outline">
+                        <i class="fas fa-edit"></i>
+                        Inscribirse
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Imagen hero -->
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <img src="img/oficios-hero.jpg" alt="Estudiantes aprendiendo oficios">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN INFORMACIÓN ===== -->
+    <section id="informacion" class="seccion">
+        <div class="container">
+            <div class="text-center mb-6" data-aos="fade-up">
+                <h2>Formación en Oficios</h2>
+                <p class="seccion-descripcion">
+                    <!-- Texto 2: Información general sobre oficios editable -->
+                    Nuestros cursos de oficios están diseñados para brindarte las competencias técnicas 
+                    necesarias para insertarte exitosamente en el mercado laboral.
+                </p>
+            </div>
+            
+            <div class="info-grid">
+                <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-icon oficios-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Formación Práctica</h3>
+                    <p>
+                        <!-- Texto 3: Información sobre formación práctica editable -->
+                        Aprendizaje hands-on con herramientas y equipos profesionales 
+                        en talleres completamente equipados.
+                    </p>
+                </div>
+                
+                <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-icon oficios-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Inserción Laboral</h3>
+                    <p>
+                        <!-- Texto 4: Información sobre inserción laboral editable -->
+                        Conexión directa con empresas del sector para facilitar 
+                        tu inserción laboral al finalizar la capacitación.
+                    </p>
+                </div>
+                
+                <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="info-icon oficios-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Certificación Oficial</h3>
+                    <p>
+                        <!-- Texto 5: Información sobre certificación editable -->
+                        Certificados oficiales reconocidos por organismos competentes 
+                        que avalan tu formación profesional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN CURSOS POR ESCUELA ===== -->
+    <section id="escuelas" class="seccion seccion-clara">
+        <div class="container">
+            <div class="text-center mb-6" data-aos="fade-up">
+                <h2>Nuestras Escuelas</h2>
+                <p class="seccion-descripcion">
+                    <!-- Texto 6: Descripción de escuelas editable -->
+                    Contamos con dos escuelas especializadas que ofrecen diferentes oficios 
+                    según tu interés y vocación.
+                </p>
+            </div>
+            
+            <!-- Escuela 230 -->
+            <div class="escuela-section" data-aos="fade-up" data-aos-delay="100">
+                <div class="escuela-header">
+                    <h3>Escuela 230</h3>
+                    <span class="escuela-badge escuela-230">Escuela 230</span>
+                </div>
+                
+                <div class="cursos-grid">
+                    <div class="curso-card">
+                        <div class="curso-image">
+                            <img src="img/electricidad.jpg" alt="Curso de Electricidad">
+                            <div class="escuela-tag escuela-230-tag">Escuela 230</div>
+                        </div>
+                        <div class="curso-content">
+                            <h4>Electricidad Domiciliaria</h4>
+                            <p class="curso-duracion">
+                                <!-- Texto 7: Duración electricidad editable -->
+                                Duración: 6 meses | Modalidad: Presencial
+                            </p>
+                            <p class="curso-descripcion">
+                                <!-- Texto 8: Descripción electricidad editable -->
+                                Aprende instalaciones eléctricas residenciales, normativas de seguridad 
+                                y mantenimiento de sistemas eléctricos básicos.
+                            </p>
+                            <button class="btn btn-primary curso-inscripcion">
+                                <i class="fas fa-edit"></i>
+                                Inscribirse
+                                <!-- acá va el link del formulario de inscripción para Electricidad Domiciliaria -->
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="curso-card">
+                        <div class="curso-image">
+                            <img src="img/plomeria.jpg" alt="Curso de Plomería">
+                            <div class="escuela-tag escuela-230-tag">Escuela 230</div>
+                        </div>
+                        <div class="curso-content">
+                            <h4>Plomería y Gasista</h4>
+                            <p class="curso-duracion">
+                                <!-- Texto 9: Duración plomería editable -->
+                                Duración: 8 meses | Modalidad: Presencial
+                            </p>
+                            <p class="curso-descripcion">
+                                <!-- Texto 10: Descripción plomería editable -->
+                                Instalación y reparación de sistemas de agua, gas y desagües. 
+                                Incluye habilitación para gas natural.
+                            </p>
+                            <button class="btn btn-primary curso-inscripcion">
+                                <i class="fas fa-edit"></i>
+                                Inscribirse
+                                <!-- acá va el link del formulario de inscripción para Plomería y Gasista -->
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="curso-card">
+                        <div class="curso-image">
+                            <img src="img/carpinteria.jpg" alt="Curso de Carpintería">
+                            <div class="escuela-tag escuela-230-tag">Escuela 230</div>
+                        </div>
+                        <div class="curso-content">
+                            <h4>Carpintería en Madera</h4>
+                            <p class="curso-duracion">
+                                <!-- Texto 11: Duración carpintería editable -->
+                                Duración: 10 meses | Modalidad: Presencial
+                            </p>
+                            <p class="curso-descripcion">
+                                <!-- Texto 12: Descripción carpintería editable -->
+                                Técnicas tradicionales y modernas de carpintería. Desde muebles básicos 
+                                hasta proyectos de construcción en madera.
+                            </p>
+                            <button class="btn btn-primary curso-inscripcion">
+                                <i class="fas fa-edit"></i>
+                                Inscribirse
+                                <!-- acá va el link del formulario de inscripción para Carpintería en Madera -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Escuela 231 -->
+            <div class="escuela-section" data-aos="fade-up" data-aos-delay="200">
+                <div class="escuela-header">
+                    <h3>Escuela 231</h3>
+                    <span class="escuela-badge escuela-231">Escuela 231</span>
+                </div>
+                
+                <div class="cursos-grid">
+                    <div class="curso-card">
+                        <div class="curso-image">
+                            <img src="img/soldadura.jpg" alt="Curso de Soldadura">
+                            <div class="escuela-tag escuela-231-tag">Escuela 231</div>
+                        </div>
+                        <div class="curso-content">
+                            <h4>Soldadura Industrial</h4>
+                            <p class="curso-duracion">
+                                <!-- Texto 13: Duración soldadura editable -->
+                                Duración: 12 meses | Modalidad: Presencial
+                            </p>
+                            <p class="curso-descripcion">
+                                <!-- Texto 14: Descripción soldadura editable -->
+                                Soldadura con electrodo, MIG, TIG y oxiacetilénica. 
+                                Formación completa para la industria metalúrgica.
+                            </p>
+                            <button class="btn btn-primary curso-inscripcion">
+                                <i class="fas fa-edit"></i>
+                                Inscribirse
+                                <!-- acá va el link del formulario de inscripción para Soldadura Industrial -->
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="curso-card">
+                        <div class="curso-image">
+                            <img src="img/mecanica.jpg" alt="Curso de Mecánica">
+                            <div class="escuela-tag escuela-231-tag">Escuela 231</div>
+                        </div>
+                        <div class="curso-content">
+                            <h4>Mecánica Automotriz</h4>
+                            <p class="curso-duracion">
+                                <!-- Texto 15: Duración mecánica editable -->
+                                Duración: 14 meses | Modalidad: Presencial
+                            </p>
+                            <p class="curso-descripcion">
+                                <!-- Texto 16: Descripción mecánica editable -->
+                                Diagnóstico y reparación de motores, sistemas de transmisión, 
+                                frenos y sistemas eléctricos automotrices.
+                            </p>
+                            <button class="btn btn-primary curso-inscripcion">
+                                <i class="fas fa-edit"></i>
+                                Inscribirse
+                                <!-- acá va el link del formulario de inscripción para Mecánica Automotriz -->
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="curso-card">
+                        <div class="curso-image">
+                            <img src="img/refrigeracion.jpg" alt="Curso de Refrigeración">
+                            <div class="escuela-tag escuela-231-tag">Escuela 231</div>
+                        </div>
+                        <div class="curso-content">
+                            <h4>Refrigeración y Aire Acondicionado</h4>
+                            <p class="curso-duracion">
+                                <!-- Texto 17: Duración refrigeración editable -->
+                                Duración: 10 meses | Modalidad: Presencial
+                            </p>
+                            <p class="curso-descripcion">
+                                <!-- Texto 18: Descripción refrigeración editable -->
+                                Instalación, mantenimiento y reparación de equipos de refrigeración 
+                                doméstica, comercial e industrial.
+                            </p>
+                            <button class="btn btn-primary curso-inscripcion">
+                                <i class="fas fa-edit"></i>
+                                Inscribirse
+                                <!-- acá va el link del formulario de inscripción para Refrigeración y Aire Acondicionado -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN REQUISITOS ===== -->
+    <section id="requisitos" class="seccion">
+        <div class="container">
+            <div class="requisitos-content">
+                <div class="requisitos-text" data-aos="fade-right">
+                    <h2>Requisitos para Oficios</h2>
+                    <div class="requisitos-lista">
+                        <!-- Texto 19: Lista de requisitos específicos editable -->
+                        <div class="requisito-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ser mayor de 16 años (con autorización parental)</span>
+                        </div>
+                        <div class="requisito-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Educación primaria completa</span>
+                        </div>
+                        <div class="requisito-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Certificado médico de aptitud física</span>
+                        </div>
+                        <div class="requisito-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>DNI original y fotocopia</span>
+                        </div>
+                        <div class="requisito-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>2 fotos carnet 4x4</span>
+                        </div>
+                    </div>
+                    
+                    <div class="requisitos-nota">
+                        <p>
+                            <!-- Texto 20: Nota adicional sobre requisitos editable -->
+                            <strong>Importante:</strong> Algunos cursos requieren conocimientos previos específicos. 
+                            Consulta los requisitos particulares de cada oficio.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="requisitos-image" data-aos="fade-left">
+                    <img src="img/requisitos-oficios.jpg" alt="Requisitos para oficios">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN INSCRIPCIÓN ===== -->
+    <section id="inscripcion" class="seccion seccion-clara">
+        <div class="container">
+            <div class="text-center mb-6" data-aos="fade-up">
+                <h2>¿Listo para Comenzar?</h2>
+                <p class="seccion-descripcion">
+                    <!-- Texto 21: Descripción inscripción editable -->
+                    Inscribite en el oficio que más te interese y comienza tu formación profesional.
+                </p>
+            </div>
+            
+            <div class="inscripcion-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="inscripcion-card">
+                    <div class="inscripcion-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Inscripción General</h3>
+                    <p>
+                        <!-- Texto 22: Información inscripción general editable -->
+                        Completa el formulario de inscripción general y luego selecciona 
+                        el oficio específico de tu interés.
+                    </p>
+                    <button class="btn btn-primary btn-lg">
+                        <i class="fas fa-edit"></i>
+                        Formulario de Inscripción
+                        <!-- acá va el link del formulario de inscripción para Aprende Oficios -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN CONTACTO ===== -->
+    <section id="contacto" class="seccion">
+        <div class="container">
+            <div class="text-center mb-6" data-aos="fade-up">
+                <h2>Contacto - Aprende Oficios</h2>
+                <p class="seccion-descripcion">
+                    <!-- Texto 23: Descripción contacto oficios editable -->
+                    ¿Tenés dudas sobre algún oficio? Contactanos para más información.
+                </p>
+            </div>
+            
+            <div class="contacto-oficios" data-aos="fade-up" data-aos-delay="100">
+                <div class="contacto-card">
+                    <h3><i class="fas fa-tools"></i> Coordinación de Oficios</h3>
+                    <!-- Texto 24: Información coordinación editable -->
+                    <p><strong>Coordinador:</strong> Prof. María González</p>
+                    <p><strong>Email:</strong> oficios@upcner.org.ar</p>
+                    <p><strong>Teléfono:</strong> (011) 4123-4568</p>
+                    <p><strong>Horarios:</strong> Lunes a Viernes 9:00 a 17:00 hs</p>
+                </div>
+                
+                <div class="contacto-card">
+                    <h3><i class="fas fa-school"></i> Escuela 230</h3>
+                    <!-- Texto 25: Información Escuela 230 editable -->
+                    <p><strong>Dirección:</strong> Av. Corrientes 1234, CABA</p>
+                    <p><strong>Teléfono:</strong> (011) 4123-4580</p>
+                    <p><strong>Email:</strong> escuela230@upcner.org.ar</p>
+                </div>
+                
+                <div class="contacto-card">
+                    <h3><i class="fas fa-school"></i> Escuela 231</h3>
+                    <!-- Texto 26: Información Escuela 231 editable -->
+                    <p><strong>Dirección:</strong> Av. Rivadavia 5678, CABA</p>
+                    <p><strong>Teléfono:</strong> (011) 4123-4581</p>
+                    <p><strong>Email:</strong> escuela231@upcner.org.ar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../img/logo-upcner.png" alt="Logo UPCNER">
+                    <p>UPCNER - Aprende Oficios</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#oficios">Oficios</a></li>
+                        <li><a href="#escuelas">Escuelas</a></li>
+                        <li><a href="#inscripcion">Inscripción</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contacto">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> oficios@upcner.org.ar</p>
+                    <p><i class="fas fa-phone"></i> (011) 4123-4568</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 UPCNER - Aprende Oficios - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTÓN FLOTANTE WHATSAPP ===== -->
+    <!-- El botón se crea automáticamente desde script.js -->
+    <!-- acá va el link de WhatsApp -->
+
+    <!-- ===== CHATBOT (OCULTO) ===== -->
+    <div id="chatbot" style="display: none;"></div>
+    <!-- chatbot oculto, activar cuando se integre con n8n u otra herramienta -->
+
+    <!-- ===== SCRIPTS ===== -->
+    <!-- AOS - Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Script principal -->
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Inicialización AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
+
