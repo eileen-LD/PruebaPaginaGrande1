@@ -1,0 +1,504 @@
+/* ===== ESTILOS ESPECÍFICOS - FORMACIÓN SECUNDARIA ===== */
+/* Archivo: style.css - Estilos para la sección de Formación Secundaria */
+/* Color de acento: Amarillo/Naranja (#f59e0b) */
+
+/* ===== VARIABLES ESPECÍFICAS ===== */
+:root {
+  --color-secundaria-principal: #f59e0b;
+  --color-secundaria-claro: #fbbf24;
+  --color-secundaria-muy-claro: #fef3c7;
+  --color-presencial: #d97706;
+  --color-semipresencial: #f59e0b;
+  --color-acelerada: #dc2626;
+}
+
+/* ===== HERO SECTION SECUNDARIA ===== */
+.secundaria-hero {
+  background: linear-gradient(135deg, var(--color-secundaria-principal) 0%, var(--color-azul-principal) 100%);
+}
+
+.secundaria-hero .hero-title {
+  background: linear-gradient(135deg, var(--color-blanco) 0%, var(--color-secundaria-muy-claro) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle.motivacional {
+  font-size: var(--texto-xl);
+  font-weight: var(--peso-medio);
+  line-height: 1.8;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== ICONOS ESPECÍFICOS ===== */
+.secundaria-icon {
+  background: linear-gradient(135deg, var(--color-secundaria-principal) 0%, var(--color-secundaria-claro) 100%);
+}
+
+/* ===== SECCIÓN MOTIVACIONAL ===== */
+.motivacion-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-3xl);
+  align-items: center;
+}
+
+.motivacion-mensaje p {
+  margin-bottom: var(--espacio-lg);
+  font-size: var(--texto-lg);
+  line-height: 1.7;
+}
+
+.motivacion-mensaje strong {
+  color: var(--color-secundaria-principal);
+  font-weight: var(--peso-semi-bold);
+}
+
+/* ===== ESTADÍSTICAS ===== */
+.estadisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--espacio-lg);
+  margin-top: var(--espacio-2xl);
+}
+
+.estadistica-item {
+  text-align: center;
+  padding: var(--espacio-lg);
+  background-color: var(--color-secundaria-muy-claro);
+  border-radius: var(--radio-lg);
+  transition: all var(--transicion-normal);
+}
+
+.estadistica-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-lg);
+}
+
+.estadistica-numero {
+  font-size: var(--texto-4xl);
+  font-weight: var(--peso-bold);
+  color: var(--color-secundaria-principal);
+  margin-bottom: var(--espacio-sm);
+}
+
+.estadistica-texto {
+  font-size: var(--texto-sm);
+  color: var(--color-gris-oscuro);
+  font-weight: var(--peso-medio);
+}
+
+/* ===== ESCUELA 216 ===== */
+.escuela-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--espacio-xl);
+  margin-top: var(--espacio-2xl);
+}
+
+.escuela-card {
+  border-left: 4px solid var(--color-secundaria-principal);
+  transition: all var(--transicion-normal);
+}
+
+.escuela-card:hover {
+  border-left-width: 8px;
+  transform: translateX(8px);
+}
+
+/* ===== MODALIDADES ===== */
+.modalidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--espacio-xl);
+  margin-top: var(--espacio-2xl);
+}
+
+.modalidad-card {
+  background-color: var(--color-blanco);
+  border-radius: var(--radio-xl);
+  overflow: hidden;
+  box-shadow: var(--sombra-md);
+  transition: all var(--transicion-normal);
+  position: relative;
+}
+
+.modalidad-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra-xl);
+}
+
+.modalidad-card.destacada {
+  border: 3px solid var(--color-secundaria-principal);
+  transform: scale(1.05);
+}
+
+.modalidad-card.destacada:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.modalidad-header {
+  background: linear-gradient(135deg, var(--color-secundaria-principal) 0%, var(--color-secundaria-claro) 100%);
+  color: var(--color-blanco);
+  padding: var(--espacio-xl);
+  text-align: center;
+  position: relative;
+}
+
+.modalidad-icon {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--espacio-lg);
+}
+
+.modalidad-icon i {
+  font-size: var(--texto-2xl);
+  color: var(--color-blanco);
+}
+
+.modalidad-header h3 {
+  margin-bottom: var(--espacio-sm);
+  color: var(--color-blanco);
+}
+
+.modalidad-badge {
+  position: absolute;
+  top: var(--espacio-md);
+  right: var(--espacio-md);
+  padding: var(--espacio-xs) var(--espacio-sm);
+  border-radius: var(--radio-md);
+  font-size: var(--texto-xs);
+  font-weight: var(--peso-semi-bold);
+}
+
+.modalidad-badge.presencial {
+  background-color: var(--color-presencial);
+  color: var(--color-blanco);
+}
+
+.modalidad-badge.semipresencial {
+  background-color: var(--color-blanco);
+  color: var(--color-secundaria-principal);
+}
+
+.modalidad-badge.acelerada {
+  background-color: var(--color-acelerada);
+  color: var(--color-blanco);
+}
+
+/* ===== CONTENIDO DE MODALIDAD ===== */
+.modalidad-content {
+  padding: var(--espacio-xl);
+}
+
+.modalidad-descripcion {
+  margin-bottom: var(--espacio-lg);
+}
+
+.modalidad-descripcion p {
+  font-size: var(--texto-lg);
+  color: var(--color-gris-oscuro);
+  line-height: 1.6;
+}
+
+.modalidad-detalles,
+.modalidad-horarios {
+  margin-bottom: var(--espacio-lg);
+}
+
+.modalidad-detalles h4,
+.modalidad-horarios h4 {
+  color: var(--color-secundaria-principal);
+  margin-bottom: var(--espacio-md);
+  font-size: var(--texto-lg);
+}
+
+.modalidad-detalles ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modalidad-detalles li {
+  padding: var(--espacio-sm) 0;
+  border-bottom: 1px solid var(--color-gris-claro);
+  position: relative;
+  padding-left: var(--espacio-lg);
+}
+
+.modalidad-detalles li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-secundaria-principal);
+  font-weight: var(--peso-bold);
+}
+
+.modalidad-horarios p {
+  margin-bottom: var(--espacio-sm);
+  padding: var(--espacio-sm) var(--espacio-md);
+  background-color: var(--color-secundaria-muy-claro);
+  border-radius: var(--radio-md);
+}
+
+.modalidad-inscripcion {
+  width: 100%;
+  justify-content: center;
+  background-color: var(--color-secundaria-principal);
+  border: none;
+}
+
+.modalidad-inscripcion:hover {
+  background-color: var(--color-secundaria-claro);
+}
+
+/* ===== REQUISITOS ESPECÍFICOS ===== */
+.requisitos-content .requisito-item:hover {
+  background-color: var(--color-secundaria-muy-claro);
+}
+
+.requisitos-content .requisito-item i {
+  color: var(--color-secundaria-principal);
+}
+
+.requisitos-nota {
+  border-left-color: var(--color-secundaria-principal);
+}
+
+/* ===== INSCRIPCIÓN ===== */
+.inscripcion-content {
+  display: flex;
+  justify-content: center;
+}
+
+.inscripcion-card {
+  background-color: var(--color-blanco);
+  padding: var(--espacio-3xl);
+  border-radius: var(--radio-xl);
+  box-shadow: var(--sombra-lg);
+  text-align: center;
+  max-width: 600px;
+  transition: all var(--transicion-normal);
+}
+
+.inscripcion-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra-xl);
+}
+
+.inscripcion-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--color-secundaria-principal) 0%, var(--color-secundaria-claro) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--espacio-xl);
+}
+
+.inscripcion-icon i {
+  font-size: var(--texto-3xl);
+  color: var(--color-blanco);
+}
+
+.inscripcion-card h3 {
+  color: var(--color-secundaria-principal);
+  margin-bottom: var(--espacio-lg);
+}
+
+.fechas-inscripcion {
+  margin: var(--espacio-xl) 0;
+  text-align: left;
+}
+
+.fechas-inscripcion h4 {
+  color: var(--color-secundaria-principal);
+  margin-bottom: var(--espacio-lg);
+  text-align: center;
+}
+
+.fecha-item {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-md);
+  margin-bottom: var(--espacio-md);
+  padding: var(--espacio-md);
+  background-color: var(--color-secundaria-muy-claro);
+  border-radius: var(--radio-md);
+  transition: all var(--transicion-normal);
+}
+
+.fecha-item:hover {
+  transform: translateX(8px);
+  background-color: var(--color-secundaria-claro);
+  color: var(--color-blanco);
+}
+
+.fecha-item i {
+  color: var(--color-secundaria-principal);
+  font-size: var(--texto-lg);
+}
+
+.fecha-item:hover i {
+  color: var(--color-blanco);
+}
+
+.inscripcion-card .btn {
+  background-color: var(--color-secundaria-principal);
+  margin-top: var(--espacio-lg);
+}
+
+.inscripcion-card .btn:hover {
+  background-color: var(--color-secundaria-claro);
+}
+
+/* ===== CONTACTO SECUNDARIA ===== */
+.contacto-secundaria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--espacio-xl);
+}
+
+.contacto-card {
+  background-color: var(--color-blanco);
+  padding: var(--espacio-2xl);
+  border-radius: var(--radio-xl);
+  box-shadow: var(--sombra-md);
+  transition: all var(--transicion-normal);
+}
+
+.contacto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sombra-lg);
+  border-left: 4px solid var(--color-secundaria-principal);
+}
+
+.contacto-card h3 {
+  color: var(--color-secundaria-principal);
+  margin-bottom: var(--espacio-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-sm);
+}
+
+.contacto-card p {
+  margin-bottom: var(--espacio-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-sm);
+}
+
+.contacto-card strong {
+  color: var(--color-secundaria-principal);
+  min-width: 80px;
+}
+
+/* ===== BOTONES ESPECÍFICOS ===== */
+.btn-outline {
+  border-color: var(--color-secundaria-principal);
+  color: var(--color-secundaria-principal);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-secundaria-principal);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .motivacion-content {
+    grid-template-columns: 1fr;
+    gap: var(--espacio-2xl);
+  }
+  
+  .estadisticas {
+    grid-template-columns: 1fr;
+  }
+  
+  .modalidades-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modalidad-card.destacada {
+    transform: none;
+  }
+  
+  .modalidad-card.destacada:hover {
+    transform: translateY(-8px);
+  }
+  
+  .contacto-secundaria {
+    grid-template-columns: 1fr;
+  }
+  
+  .inscripcion-card {
+    padding: var(--espacio-2xl);
+  }
+  
+  .fechas-inscripcion {
+    text-align: center;
+  }
+  
+  .fecha-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalidad-content {
+    padding: var(--espacio-lg);
+  }
+  
+  .inscripcion-card {
+    padding: var(--espacio-xl);
+  }
+  
+  .contacto-card {
+    padding: var(--espacio-lg);
+  }
+  
+  .modalidad-badge {
+    position: static;
+    display: inline-block;
+    margin-top: var(--espacio-sm);
+  }
+  
+  .motivacion-mensaje p {
+    font-size: var(--texto-base);
+  }
+}
+
+/* ===== ANIMACIONES ESPECÍFICAS ===== */
+@keyframes pulseOrange {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
+.modalidad-inscripcion:hover {
+  animation: pulseOrange 1.5s infinite;
+}
+
+/* ===== EFECTOS HOVER ADICIONALES ===== */
+.modalidad-badge:hover {
+  transform: scale(1.05);
+  transition: transform var(--transicion-normal);
+}
+
+.estadistica-item:hover .estadistica-numero {
+  transform: scale(1.1);
+  transition: transform var(--transicion-normal);
+}
+
